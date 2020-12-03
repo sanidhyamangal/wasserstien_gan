@@ -2,12 +2,12 @@ import tensorflow as tf  # for deep learning based ops
 
 
 # create a sample model for the dcgan
-class WasseterianGenerative(tf.keras.models.Model):
+class WasserstienGenerative(tf.keras.models.Model):
     """
-    Class for implementaion of Generative model for Wasseterian GAN Arch
+    Class for implementaion of Generative model for Wasserstien GAN Arch
     """
     def __init__(self, *args, **kwargs):
-        super(WasseterianGenerative, self).__init__(*args, **kwargs)
+        super(WasserstienGenerative, self).__init__(*args, **kwargs)
 
         self.model = tf.keras.Sequential([
             tf.keras.layers.Dense(7 * 7 * 256,
@@ -51,12 +51,12 @@ class WasseterianGenerative(tf.keras.models.Model):
 
 
 # create a sample model for the dcgan
-class WasseterianDiscriminative(tf.keras.models.Model):
+class WasserstienDiscriminative(tf.keras.models.Model):
     """
-    Discriminative Model for Wasseterian GAN Arch
+    Discriminative Model for Wasserstien GAN Arch
     """
     def __init__(self, *args, **kwargs):
-        super(WasseterianDiscriminative, self).__init__(*args, **kwargs)
+        super(WasserstienDiscriminative, self).__init__(*args, **kwargs)
 
         self.model = tf.keras.Sequential([
             tf.keras.layers.Conv2D(64,

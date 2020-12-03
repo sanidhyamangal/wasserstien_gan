@@ -1,7 +1,9 @@
-# Wasseterian GAN
-A simple and easy implementation of wasseterian GANs for generation of fashion mnist based images.
+# Wasserstien GAN
+A simple and easy implementation of Wasserstien GANs for generation of fashion mnist based images.
 
-![alt Wasseterian GAN](./wasseterian.gif "WGAN")
+More information about it could be found on [link](https://arxiv.org/abs/1701.07875)
+
+![alt Wasserstien GAN](./wasserstien.gif "WGAN")
 
 ### requirements
 - tensorflow >= 2.0
@@ -39,7 +41,7 @@ wget https://gitlab.com/sanidhyamangal/datasets/-/raw/master/fashion-mnist_train
 
 ### How to train model
 ```
-python3 wasseterian.py
+python3 wasserstien.py
 ```
 
 ### How to Generate Images?
@@ -49,14 +51,14 @@ Image generation can be carried out using two different methods, which are as fo
 ```bash
 python -i generate_images.py
 
-image_generator = WasseterianImageGenerator()
+image_generator = WasserstienImageGenerator()
 image_generator.generate_save_images()
 ```
 
 #### In a python file
 ```python
-from generate_images import WasseterianImageGenerator
+from generate_images import WasserstienImageGenerator
 
-image_generator = WasseterianImageGenerator()
+image_generator = WasserstienImageGenerator()
 image_generator.generate_save_images()
 ```

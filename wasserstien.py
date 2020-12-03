@@ -12,7 +12,7 @@ import tensorflow as tf  # for deep learning related steps
 from IPython import display
 
 from data_handler import data_loader_csv_unsupervisied
-from models import WasseterianDiscriminative, WasseterianGenerative
+from models import WasserstienDiscriminative, WasserstienGenerative
 
 # Batch and shuffle the data
 #TODO: if you dont have fashion-minst data then you can download it from here:
@@ -23,7 +23,7 @@ train_dataset = data_loader_csv_unsupervisied("./fashion-mnist_train.csv", 256)
 
 
 # intansiate generator
-generator = WasseterianGenerative()
+generator = WasserstienGenerative()
 
 print(generator.model.summary())
 noise = tf.random.normal([1, 100])
@@ -32,7 +32,7 @@ generated_image = generator(noise, training=False)
 plt.imshow(generated_image[0, :, :, 0], cmap="gray")
 
 # work on discriminator model
-discriminator = WasseterianDiscriminative()
+discriminator = WasserstienDiscriminative()
 decision = discriminator(generated_image)
 print(decision)
 

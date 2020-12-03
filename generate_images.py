@@ -3,16 +3,16 @@ import os  # for os related ops
 import matplotlib.pyplot as plt  # for plotting the results
 import tensorflow as tf  # for deep learning related ops
 
-from models import WasseterianGenerative
+from models import WasserstienGenerative
 
 
-class WasseterianImageGenerator():
+class WasserstienImageGenerator():
     """
     A Function for performing Image generation operations
     """
     def __init__(self, model_checkpoint_dir: str = "./training_checkpoints"):
         # init wasseterian generative examples
-        self.generator = WasseterianGenerative()
+        self.generator = WasserstienGenerative()
 
         # creation of checkpoint dirs
         checkpoint_dir = './training_checkpoints'
